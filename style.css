@@ -1,0 +1,48 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: Raleway;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section1 {
+  background-image: url(bg-6.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 500px;
+}
+.nav-item {
+  text-transform: uppercase;
+}
+.position {
+  position: absolute;
+  bottom: 30%;
+}
+.clr {
+  background-color: rgb(246, 237, 240);
+}
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  padding: 20px;
+  border: 2px rgb(221, 163, 231);
+  height: 75%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+#about {
+  background-image: url(imges/bg-05.jpg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 40%;
+  height: 500px;
+}
