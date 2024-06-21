@@ -1,5 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); */
-
+@media (max-width: 576px) {
+  .section1 {
+    background-image: url(imges/bg-6.jpg) !important;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   font-family: Raleway;
@@ -7,8 +14,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* section1 */
 .section1 {
-  background-image: url(bg-6.jpg) !important;
+  background-image: url(imges/bg-6.jpg) !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -28,7 +36,7 @@
   padding-bottom: 50%;
   position: relative;
 }
-
+/* about paage google map */
 .google-map iframe {
   padding: 20px;
   border: 2px rgb(221, 163, 231);
@@ -38,11 +46,361 @@
   top: 0;
   position: absolute;
 }
-#about {
+#about-us {
   background-image: url(imges/bg-05.jpg) !important;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 40%;
   height: 500px;
+}
+.divsize {
+  padding: 5%;
+}
+.sze {
+  height: 500px;
+}
+#product {
+  background-image: url(imges/bg-04.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  height: 700px;
+}
+/* about me section */
+.image-container {
+  animation: fadeIn 2s ease-in-out;
+  padding: 0;
+}
+
+.text-container {
+  color: #333;
+  animation: fadeInRight 2s ease-in-out;
+}
+
+.text-container h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.text-container h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.text-container .intro {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+.container3:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  background-color: rgb(246, 237, 240); /* Yellow background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border: rgb(229, 191, 185);
+}
+
+/* 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+/* poition css section about product */
+/* Basic styling for the overlay */
+.img-container2 {
+  position: relative;
+  height: 700px; /* Adjust height as needed */
+  background-image: url("imges/bg-04.jpg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no repeat;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 30%; /* Text positioned 30% above the bottom */
+  left: 0;
+  width: 100%;
+  background-color: rgba(
+    250,
+    53,
+    18,
+    0.084
+  ); /* Adjust opacity/color as needed */
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.overlay:hover {
+  transform: translateY(0);
+}
+
+.text-white {
+  color: white;
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+.overlay:hover .text-white {
+  font-size: 30px; /* Increase font size on hover */
+}
+/* review section */
+
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  background-color: rgb(246, 237, 240); /* Yellow background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border: rgb(229, 191, 185);
+}
+
+.card.selected {
+  background-color: white(
+    221,
+    163,
+    231
+  ); /* Yellow background color for selected card */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* hair care products section */
+#product-grid .product-card {
+  border: none;
+}
+
+#product-grid .product-card-title {
+  font-size: 1rem;
+}
+
+#product-grid .product-card-text {
+  font-size: 0.875rem;
+}
+
+#product-grid .position-relative .badge {
+  font-size: 0.75rem;
+}
+/* scroll text */
+.scrolling-text {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.fadeInDownBig {
+  animation: fadeInDownBig 3s forwards;
+}
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUpBig {
+  animation: fadeInUpBig 1s forwards;
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.text-wave {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+.text-wave span {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+}
+.bounce {
+  animation: bounce 5s infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+}
+/* shop all page */
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.hero {
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: white;
+}
+
+.card {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.btn-light {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: #f8f9fa;
+}
+
+footer img {
+  height: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+form input {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+  #newintown {
+    background-image: url(imges/hero.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 70% !important;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .form-control-lg {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn-lg {
+    width: 100%;
+  }
+}
+
+.positiontext {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 30%;
+}
+#newintown {
+  background-image: url(imges/hero.jpg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  height: 500px;
+}
+
+#newcollection {
+  background-image: url(imges/bg-03.jpg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 70%;
+  height: 600px !important;
+}
+/* feature section */
+.featuresize {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
 }
