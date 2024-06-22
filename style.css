@@ -308,7 +308,15 @@
 .navbar-brand img {
   height: 50px;
 }
-
+#newintown {
+  background-image: url(imges/hero.jpg) no-repeat center center/cover !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  height: auto;
+  max-width: 100%;
+}
 .hero {
   background: url("hero-bg.jpg") no-repeat center center/cover;
   color: white;
@@ -349,20 +357,24 @@ form input {
   margin-right: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-brand img {
     height: 40px;
   }
   #newintown {
-    background-image: url(imges/hero.jpg) !important;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 70% !important;
+    min-height: 10vh;
+    min-width: 70vh;
+  }
+  #newcollection {
+    min-height: 30vh;
+    min-width: 70vh;
+  }
+  .positiontext {
+    font-size: calc(1.525rem+3.3vw);
   }
 
   .card-img-top {
-    height: 150px;
+    height: 100px;
   }
 
   .form-control-lg {
@@ -387,7 +399,7 @@ form input {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 60%;
-  height: 500px;
+  min-height: 80vh;
 }
 
 #newcollection {
@@ -395,8 +407,9 @@ form input {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 70%;
-  height: 600px !important;
+  background-position: 75%;
+
+  min-height: 70vh;
 }
 /* feature section */
 .featuresize {
