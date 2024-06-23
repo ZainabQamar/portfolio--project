@@ -13,8 +13,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 40%;
-    min-height: 90vh;
-    min-width: 60vh;
+    min-height: 80vh;
+    min-width: 50vh;
   }
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
@@ -62,7 +62,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 40%;
-  min-height: 50vh;
+  min-height: 80vh;
 }
 .divsize {
   padding: 5%;
