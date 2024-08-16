@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); */
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .section1 {
     background-image: url(imges/bg-6.jpg) !important;
     background-size: 50%;
@@ -16,7 +16,7 @@
     min-height: 80vh;
     min-width: 50vh;
   }
-}
+} */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   font-family: Raleway;
@@ -30,7 +30,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  min-height: 70vh;
+  /* min-height: 70vh; */
+  width: 100%;
+  height: 100vh;
 }
 .nav-item {
   text-transform: uppercase;
@@ -61,8 +63,10 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 40%;
-  min-height: 80vh;
+  background-position: 70%;
+  /* min-height: 80vh; */
+  width: 100%;
+  height: 100vh;
 }
 .divsize {
   padding: 5%;
@@ -75,8 +79,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
-  min-height: 70vh;
-  min-width: 70vh;
+  width: 100%;
+  height: 100vh;
+  /* min-height: 70vh;
+  min-width: 70vh; */
 }
 
 /* about me section */
@@ -149,6 +155,8 @@
   background-size: cover;
   background-position: 100%;
   background-repeat: no repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 .overlay {
@@ -316,7 +324,7 @@
     transform: translateY(-20px);
   }
 }
-/* shop all page */
+/*home  page */
 
 .navbar-brand img {
   height: 50px;
@@ -375,17 +383,35 @@ form input {
   .navbar-brand img {
     height: 40px;
   }
+  .section1 {
+    min-height: 70%;
+    min-width: 70%;
+    background-position: 70%;
+  }
+  #about-us {
+    min-height: 70%;
+    min-width: 70% !important;
+    background-position: 70%;
+  }
+  #product {
+    min-height: 70%;
+    min-width: 70%;
+    background-position: 10% !important;
+  }
+  .img-container2 {
+    min-height: 70%;
+    min-width: 70%;
+    background-position: 50%;
+  }
   #newintown {
     min-height: 70%;
     min-width: 100%;
   }
   #newcollection {
-    /* min-height: 30vh;
-    min-width: 70vh; */
     min-height: 70%;
     min-width: 100%;
   }
-  .positiontext {
+  */ .positiontext {
     font-size: calc(1.525rem+3.3vw);
   }
 
@@ -402,14 +428,14 @@ form input {
     width: 100%;
   }
 
-  #product {
+  /* #product {
     min-height: 70%;
     min-width: 100%;
   }
   .img-container2 {
     min-height: 70%;
     min-width: 100%;
-  }
+  } */
 }
 
 .positiontext {
@@ -423,9 +449,11 @@ form input {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 60%;
-  min-height: 80vh;
-  min-height: 80vh;
+  background-position: 70%;
+  /* min-height: 80vh;
+  min-height: 80vh; */
+  width: 100%;
+  height: 100vh;
 }
 
 #newcollection {
@@ -433,13 +461,29 @@ form input {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 75%;
-
-  min-height: 70vh;
+  background-position: 60%;
+  width: 100%;
+  height: 100vh;
 }
 /* feature section */
 .featuresize {
   height: 50px;
   width: 50px;
   border-radius: 25px;
+}
+/* Add this to your styles.css */
+
+.responsive-background {
+  background-image: url("path/to/your/image.jpg"); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+}
+
+@media (max-width: 768px) {
+  #newintown {
+    /* Adjust height for small screens */
+  }
 }
